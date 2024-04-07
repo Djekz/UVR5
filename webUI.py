@@ -141,9 +141,9 @@ class UVRWebUI:
         return primary_audio, secondary_audio, msg
 
     def define_layout(self):
-        with gr.Blocks() as app:
+        with gr.Blocks(theme='otit/sky-blue') as app:
             self.app = app
-            gr.HTML("<h1> 🎵 Ultimate Vocal Remover 5.6 for Google Colab 🎵 </h1>")
+            gr.HTML("<h1> 🎵 UVR5 Webui🎵 </h1>")
             gr.Markdown("## Colab created by [Not Eddy (Spanish Mod)](http://discord.com/users/274566299349155851) in [AI HUB](https://discord.gg/aihub) server.")
             gr.Markdown("## You can also use this into a Hugging Face Space [here](https://huggingface.co/spaces/Eddycrack864/UVR5). If you liked the space and colab you can give it a 💖 and star my repo on [GitHub](https://github.com/Eddycrack864/UVR5-5.6-for-Colab).")
             with gr.Tabs():
